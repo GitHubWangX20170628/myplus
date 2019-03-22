@@ -1,0 +1,59 @@
+<assembly>
+    <id>bundle</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory> <!-- disable the creation of root's distribution dir in the archive -->
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>bin</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputFileNameMapping>${project.artifactId}.${project.packaging}</outputFileNameMapping>
+            <scope>runtime</scope>
+            <includes>
+                <include>com.ibeetl:admin-console</include>
+            </includes>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+            <scope>runtime</scope>
+            <excludes>
+                <exclude>junit:junit</exclude>
+                <exclude>org.springframework:spring-test</exclude>
+                <exclude>org.mockito:mockito-core</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <!-- config files -->
+        <fileSet>
+            <directory>${basedir}/src/main/resources</directory>
+            <outputDirectory>bin</outputDirectory>
+            <includes>
+                <include>application*.properties</include>
+               <!-- <include>log4j.properties</include>-->
+            </includes>
+            <fileMode>0644</fileMode>
+        </fileSet>
+        <!-- scripts -->
+        <fileSet>
+            <directory>${basedir}/src/main/resources/assembly</directory>
+            <includes>
+                <include>*.sh</include>
+            </includes>
+            <fileMode>0755</fileMode>
+            <outputDirectory>bin</outputDirectory>
+        </fileSet>
+        <!-- executable jar -->
+        <!--<fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>${project.artifactId}-${project.version}.jar</include>
+            </includes>
+            <fileMode>0755</fileMode>
+        </fileSet>-->
+    </fileSets>
+
+</assembly>
