@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.mysql.cj.mysqlx.protobuf.MysqlxDatatypes;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -14,8 +16,8 @@ import java.io.Serializable;
 @Table(name = "ay_role")
 public class AyRole implements Serializable{
     @Id
-    private String id;
-    private String name;
+    private MysqlxDatatypes.Scalar.String id;
+    private MysqlxDatatypes.Scalar.String name;
 
     public String getId() {
         return id;

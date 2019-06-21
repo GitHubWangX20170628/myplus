@@ -1,0 +1,35 @@
+﻿2018/1/4：学校项目-bugID:176--app提问与作业模块无法显示附件问题；180--PC端教师登陆作业问答显示详情报错；201--优秀学生评分有歧义-已完成
+2018/1/4：学校项目-bugID:186 :APP管理员角色：提问与作业，提示请求错-已完成
+2018/2/8: 梳理差错对账，清算平台业务逻辑；20：38
+异步社区：iphoneNumber  abcd1234
+
+java虚拟机linux密码：abcd1234
+tts root123
+253098309@qq.com yzyhkjb2018
+
+qc qtp loadrunner
+mock
+
+sonarqube : admin admin
+
+jenkins :root 123456  admin 123456
+
+2018/09/  第19讲 持续集成篇--Hudson持续集成服务器的使用（自动化编译、分析、打包、
+
+Spring Boot 2精髓 应用实例：spring boot plus
+
+
+ /root/nexus/nexus-2.11.2-03/bin/nexus start 
+admin 123456
+
+/home/wusc1/sonarqube/bin/linux-x86-64/sonar.sh start
+192.168.0.73 hudson   admin 123456
+
+
+git@gitlab.com:GitHubWangX20170628/myplus.git
+https://gitlab.com/GitHubWangX20170628/myplus.git
+/var/lib/jenkins/workspace
+
+
+
+www.nbrkb.net 宁波软考网
